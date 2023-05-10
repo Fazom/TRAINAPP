@@ -28,6 +28,8 @@ namespace TrainApp
         private void gena()
         {
             number += 10;
+            if(number>5)
+            number = 5;
         }
 
     }
