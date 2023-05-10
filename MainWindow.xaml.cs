@@ -20,18 +20,15 @@ namespace TrainApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public int number = 0;
+
+
         public MainWindow()
         {
-            InitializeComponent();
-        }
-        private void gena()
-        {
-            number += 10;
-            if(number>5)
-            number = 5;
-        }
 
+            InitializeComponent();
+
+        }
+        
     }
 
 }
