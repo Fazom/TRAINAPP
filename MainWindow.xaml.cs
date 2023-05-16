@@ -28,7 +28,15 @@ namespace TrainApp
             InitializeComponent();
 
         }
-        
+        private void maksimproverka()
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            prob.Text = "Серега Никотинчик гей";
+        }
     }
 
 }

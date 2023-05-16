@@ -8,11 +8,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="820" Width="1540">
     <Grid VerticalAlignment="Top">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="1460,194,0,0" VerticalAlignment="Top" Height="95" Width="70"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="1460,699,0,0" VerticalAlignment="Top" Height="95" Width="70"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,699,0,0" VerticalAlignment="Top" Height="95" Width="70"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="95" Width="70"/>
-
+        <Button x:Name="proverka" Content="Button" HorizontalAlignment="Left" Margin="1250,94,0,0" VerticalAlignment="Top" Height="100" Width="170" Click="Button_Click"/>
+        <TextBlock x:Name="prob" HorizontalAlignment="Left" Margin="670,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="80" Width="280"/>
     </Grid>
 
 </Window>
