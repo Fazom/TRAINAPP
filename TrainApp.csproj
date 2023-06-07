@@ -8,13 +8,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AllWindows\free-icon-home-1946488.png" />
+    <None Remove="AllWindows\hand1.jpg" />
+    <None Remove="AllWindows\hand2.jpg" />
+    <None Remove="AllWindows\plus.png" />
+    <None Remove="AllWindows\triceps.jpg" />
+    <None Remove="AllWindows\user.png" />
+    <None Remove="AllWindows\uzkiy.png" />
+    <None Remove="Image\biceps.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Fonts\" />
     <Folder Include="Core\" />
-    <Folder Include="Image\" />
+    <Folder Include="video\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AllWindows\free-icon-home-1946488.png" />
+    <Resource Include="AllWindows\hand1.jpg" />
+    <Resource Include="AllWindows\hand2.jpg" />
+    <Resource Include="AllWindows\plus.png" />
+    <Resource Include="AllWindows\triceps.jpg" />
+    <Resource Include="AllWindows\user.png" />
+    <Resource Include="AllWindows\uzkiy.png" />
+    <Resource Include="Image\biceps.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="pushups.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

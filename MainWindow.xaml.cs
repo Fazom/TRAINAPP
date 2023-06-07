@@ -26,11 +26,11 @@ namespace TrainApp
         {
 
             InitializeComponent();
+            MainFrame.Content = new AllWindows.mainpage();
 
         }
 
-
-        
+       
     }
 
 }

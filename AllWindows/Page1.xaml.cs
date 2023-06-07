@@ -24,5 +24,20 @@ namespace TrainApp.AllWindows
         {
             InitializeComponent();
         }
+
+        private void But_1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllWindows.Page2());
+        }
+
+        private void But_2_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButLk_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllWindows.LK());
+        }
     }
 }

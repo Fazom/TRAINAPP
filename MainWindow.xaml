@@ -7,51 +7,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrainApp"
         mc:Ignorable="d"
-        Title="TrainApp" Height="1720" Width="1540">
-    <Grid Margin="0" Background="#353647">
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="0,100,0,0">
-                <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
-                    <Border.Effect>
-                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"></DropShadowEffect>
-                    </Border.Effect>
-                    <Grid>
-                        <TextBlock Text="Бицепс" HorizontalAlignment="Right" Margin ="0,27,645,306" FontSize="40" Width="330" FontFamily="Century Gothic"/>
-                        <Button Content="Просмотр" Margin="1075,328,85,40" Click="Button_Click_1" />
-                        <Image Margin="-940 ,0,0,0" Height="320" Width="320" Source="E:\VUZ\Курсач\Новая папка\maxresdefault.jpg" Stretch="UniformToFill" />
-                        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Margin ="0,0,330,40" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Bottom" Height="261" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
-                    </Grid>
-
-
-                </Border>
-                <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
-                    <Border.Effect>
-                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"></DropShadowEffect>
-                    </Border.Effect>
-                    <Grid>
-                        <TextBlock HorizontalAlignment="Right" Margin ="0,27,645,306" FontSize="40" Width="330" FontFamily="Century Gothic"><Run Language="ru-ru" Text="Трицепс"/></TextBlock>
-                        <Button Content="Просмотр" Margin="1075,328,85,40" />
-                        <Image Margin="-940 ,0,0,0" Height="320" Width="320" Source="E:\VUZ\Курсач\Новая папка\1639649398_46-sportishka-com-p-tritseps-sport-krasvivo-foto-50.jpg" Stretch="UniformToFill" />
-                        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Margin ="0,0,330,40" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Bottom" Height="266" TextAlignment="Justify"><Run Text="Если вы хотите иметь огромные руки, то первым делом вам нужна мощная трехглавая мышца плеча (трицепс), которая отвечает за разгибание предплечья в локтевом суставе. В "/><Run Language="ru-ru" Text="этом блоке"/><Run Text=" "/><Run Language="ru-ru" Text="будет показано"/><Run Text=" несколько убойных упражнений для её развития"/><Run Language="ru-ru" Text="."/></TextBlock>
-                    </Grid>
-
-
-                </Border>
-                <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
-                    <Border.Effect>
-                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"></DropShadowEffect>
-                    </Border.Effect>
-                    <Grid>
-                        <TextBlock Text="Бицепс" HorizontalAlignment="Right" Margin ="0,27,645,306" FontSize="40" Width="330" FontFamily="Century Gothic"/>
-                        <Button Content="Просмотр" Margin="1075,328,85,40" />
-                        <Image Margin="-940 ,0,0,0" Height="320" Width="320" Source="E:\VUZ\Курсач\Новая папка\maxresdefault.jpg" Stretch="UniformToFill" />
-                        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Margin ="0,0,330,40" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Bottom" Height="241" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
-                    </Grid>
-
-
-                </Border>
-            </StackPanel>
-        </ScrollViewer>
-
-    </Grid>
+        Title="MainWindow" Height="1720" Width="1540" >
+    <Frame Name="MainFrame" Background="White" NavigationUIVisibility="Hidden"/> 
 </Window>
