@@ -18,12 +18,12 @@
                             <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                         </Border.Effect>
                         <Grid>
-                            <TextBlock Text="Руки" HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"/>
+                            <TextBlock Text="Руки: улица" HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"/>
                             <Button x:Name="But_1"  Content="Просмотр" Margin="1090,328,55,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
                             <Image Margin="55,99,1078,54" Source="/Image/biceps.jpg" Stretch="UniformToFill" />
                             <Image Margin="330,99,803,54" Source="/AllWindows/hand1.jpg" Stretch="UniformToFill" />
                             <Image Margin="605,99,532,54" Source="/AllWindows/hand2.jpg" Stretch="UniformToFill" />
-                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Width="415" FontFamily="Century Gothic" VerticalAlignment="Top" Height="224" TextAlignment="Justify" Margin="910,99,0,0"><Run Text="В данном блоке собраны тренировки на все группы мышц рук"/><Run Language="ru-ru" Text=". Программы нацеленны на тренировки в зале, а также на спорт площадках на улице"/></TextBlock>
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Width="415" FontFamily="Century Gothic" VerticalAlignment="Top" Height="224" TextAlignment="Justify" Margin="910,99,0,0"><Run Text="В данном блоке собраны тренировки на все группы мышц рук"/><Run Text=". Программы нацеленны на тренировки"/><Run Language="ru-ru" Text=" "/><Run Text="на спорт площадках на улице"/></TextBlock>
                         </Grid>
                     </Border>
                     <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >

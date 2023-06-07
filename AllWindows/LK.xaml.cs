@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +17,7 @@ using System.Windows.Shapes;
 
 namespace TrainApp.AllWindows
 {
-    /// <summary>
-    /// Логика взаимодействия для LK.xaml
-    /// </summary>
+   
     public partial class LK : Page
     {
         public LK()
@@ -28,6 +28,17 @@ namespace TrainApp.AllWindows
             {
                 Train1.Visibility= Visibility.Visible;
             }
+
+            string filePath = Properties.Settings.Default.avatar;
+            if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
+            {
+                BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+                avatar.Source = bitmap;
+            }
+
+
+
+
         }
 
         private void GoHome(object sender, RoutedEventArgs e)
@@ -38,6 +49,21 @@ namespace TrainApp.AllWindows
         private void But_1_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new AllWindows.Page2());
+        }
+
+        private void Browse_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg)|*.png;*.jpg;*.jpeg";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string filePath = openFileDialog.FileName;
+                BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+                avatar.Source = bitmap;
+                Properties.Settings.Default.avatar = filePath;
+                Properties.Settings.Default.Save();
+            }
         }
     }
 }

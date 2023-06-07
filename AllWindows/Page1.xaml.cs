@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace TrainApp.AllWindows
 {
-    /// <summary>
-    /// Логика взаимодействия для Page1.xaml
-    /// </summary>
+    
     public partial class Page1 : Page
     {
         public Page1()
@@ -38,6 +36,11 @@ namespace TrainApp.AllWindows
         private void ButLk_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new AllWindows.LK());
+        }
+
+        private void GoHome(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllWindows.mainpage());
         }
     }
 }

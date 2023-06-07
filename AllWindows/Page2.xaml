@@ -4,30 +4,53 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TrainApp.AllWindows"
-      mc:Ignorable="d" 
-      d:DesignHeight="1720" d:DesignWidth="1540"  
-      Title="Page2">
+      mc:Ignorable="d" d:DesignWidth="1540"  
+      Title="Page2" Height="Auto">
 
     <Grid Margin="0" Background="#353647">
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="0,150,0,0">
-
-                <Border Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="1000" >
+        <ScrollViewer Margin="0" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0,100,0,0">
+                <Border Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="auto" >
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                     </Border.Effect>
                     <Grid>
 
-                        <TextBlock Text="Подтягивания с узким хватом " HorizontalAlignment="Right" Margin ="0,50,38,850" FontSize="40" Width="1292" FontFamily="Century Gothic" TextAlignment="Center"/>
+                        <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Margin ="0,50,38,850" FontSize="40" Width="1292" FontFamily="Century Gothic" TextAlignment="Center"><Run Text="Подтягивания с узким хвато"/><Run Language="ru-ru" Text="м"/><Run Text=":"/><Run Language="ru-ru" Text=" 3-4 подхода по максимальному количеству повторений"/><LineBreak FontSize="20"/></TextBlock>
                         <Image Margin="847,185,40,482" Source="/AllWindows/uzkiy.png" Stretch="UniformToFill" />
-                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="40,185,0,0" FontSize="20" Width="749" FontFamily="Century Gothic" VerticalAlignment="Top" Height="326" TextAlignment="Justify"><Run Text="От постановки рук зависит какая именно группа мышечных волокон будет вовлечена в работу. Чтобы работал бицепс, хват должен быть обратным либо прямым (лучше комбинировать или чередовать), с расстоянием между руками меньше уровня плеч, примерно 15-20 см друг от друга. Можно комбинировать с параллельным хватом, когда ладони будут располагаться на одном уровне с плечами, но не на перекладине, а на боковых рукоятках, друг напротив друга. "/><LineBreak/><Run/><LineBreak/><Run Text="Нагрузка на бицепс происходит не во время всего подтягивания, а только до достижения 90 градусов в локтевом сгибе. После этого в процесс включается широчайшая мышца, ее участие позволяет дотянуться подбородком до перекладины. "/></TextBlock>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="40,185,0,0" FontSize="20" Width="749" FontFamily="Century Gothic" VerticalAlignment="Top" Height="335" TextAlignment="Justify"><Run Text="От постановки рук зависит какая именно группа мышечных волокон будет вовлечена в работу. Чтобы работал бицепс, хват должен быть обратным либо прямым (лучше комбинировать или чередовать), с расстоянием между руками меньше уровня плеч, примерно 15-20 см друг от друга. Можно комбинировать с параллельным хватом, когда ладони будут располагаться на одном уровне с плечами, но не на перекладине, а на боковых рукоятках, друг напротив друга. "/><LineBreak/><Run/><LineBreak/><Run Text="Нагрузка на бицепс происходит не во время всего подтягивания, а только до достижения 90 градусов в локтевом сгибе. После этого в процесс включается широчайшая мышца, ее участие позволяет дотянуться подбородком до перекладины. "/><LineBreak/></TextBlock>
                         <Grid>
                             <MediaElement x:Name="video1"  Width="700" Height="400" Margin="67,532,618,52" LoadedBehavior="Manual" Source="E:\VUZ\2Семак\Прикладное программирование\TrainApp\pushups.mp4" />
-                            <Button x:Name="Playbut" Content="Play" Click="Playbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,888,0,0" />
-                            <Button x:Name="Pausebut" Content="Pause" Click="Pausebutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="665,888,0,0" />
-                            <Button x:Name="Replaybut" Content="Replay" Click="RePlaybutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,888,0,0" />
+                            <Button x:Name="Playbut" Content="Play" Click="Playbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,915,0,0" />
+                            <Button x:Name="Pausebut" Content="Pause" Click="Pausebutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="665,915,0,0" />
+                            <Button x:Name="Replaybut" Content="Replay" Click="RePlaybutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,915,0,0" />
                         </Grid>
+                    </Grid>
+                </Border>
+
+                <Border Margin="80,50,80,10"  CornerRadius="50" Background="White" Padding="0" Height="auto" >
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
+                    </Border.Effect>
+                    <Grid>
+
+                        <TextBlock Text="Австралийские подтягивания: 3-4 подхода по 10-12 повторений" HorizontalAlignment="Right" Margin ="0,50,38,850" FontSize="40" Width="1292" FontFamily="Century Gothic" TextAlignment="Center"/>
+                        <Image Margin="0,576,0,82" Source="/AllWindows/avstralian1.jpeg" HorizontalAlignment="Center" Stretch="Uniform" Width="1140" />
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin ="0,150,0,0" FontSize="20" Width="1302" FontFamily="Century Gothic" VerticalAlignment="Top" Height="350" TextAlignment="Justify"><Run Text="Австралийские подтягивания, также известные как горизонтальные подтягивания или инверсионные подтягивания, являются эффективным упражнением для развития мышц верхней части спины, бицепсов и плечевого пояса. Они выполняются с использованием нижней перекладины или горизонтальной планки."/><LineBreak/><Run Text="Вот правильная техника выполнения австралийских подтягиваний:"/><LineBreak/><Run Text="1)Найдите подходящую перекладину или горизонтальную планку на спортплощадке, находящуюся на уровне груди или ниже. Расстояние между руками должно быть немного шире плеч."/><LineBreak/><Run Text="2)Станьте лицом к перекладине, возьмите ее хватом сверху (ладони смотрят вперед) с вытянутыми руками на уровне груди. Начальное положение похоже на начало отжиманий."/><LineBreak/><Run Text="3)Напрягите мышцы корпуса и ног, чтобы создать прямую линию от пяток до головы. Это поможет вам поддерживать стабильность тела во время упражнения."/><LineBreak/><Run Text="4)Согните руки в локтях и притяните грудь к перекладине. Двигайтесь вперед, пока ваше тело не будет на одной линии с перекладиной или планкой. Это и есть положение верхней точки упражнения."/><LineBreak/><Run Text="5)Затем плавно вернитесь в исходное положение, раскачиваясь назад, пока ваши руки снова не будут вытянуты и ваш корпус не будет параллелен полу. Это и есть положение нижней точки упражнения."/></TextBlock>
+                        <Grid/>
+                    </Grid>
+                </Border>
+                <Border  Margin="80,50,80,10" CornerRadius="50" Background="White" Padding="0" Height="auto" >
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
+                    </Border.Effect>
+                    <Grid>
+
+                        <TextBlock Text="Молотковые подтягивания: 3-4 подхода по 10-12 повторений" HorizontalAlignment="Right" Margin ="0,50,38,850" FontSize="40" Width="1292" FontFamily="Century Gothic" TextAlignment="Center"/>
+                        <Image Margin="0,576,0,82" Source="/AllWindows/molotki.jpeg" HorizontalAlignment="Center" Stretch="Uniform" Width="1140" />
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin ="0,150,0,0" FontSize="20" Width="1302" FontFamily="Century Gothic" VerticalAlignment="Top" Height="378" TextAlignment="Justify"><Run Text="Молотковые подтягивания (Hammer grip pull-ups) - это вариация подтягиваний, при которой используется хват &quot;молоток&quot; или нейтральный хват. В этом упражнении бицепсы активно задействуются, а также развиваются мышцы спины и плечевого пояса. Вот правильная техника выполнения молотковых подтягиваний:"/><LineBreak/><Run Text="1 )Найдите подходящую перекладину на спортплощадке. Станьте лицом к перекладине, поставив ноги на пол или используя подножку для поддержки."/><LineBreak/><Run Text="2 )Возьмите перекладину нейтральным хватом, где ладони будут смотреть друг на друга. Ширина хвата может быть немного шире плеч."/><LineBreak/><Run Text="3) Напрягите мышцы корпуса и ног, чтобы создать прямую линию от пяток до головы. Это поможет вам поддерживать стабильность тела во время упражнения."/><LineBreak/><Run Text="4) Согните руки в локтях и начните подтягиваться, приближая грудь к перекладине. Двигайтесь вверх, пока ваш подбородок не будет на уровне или выше перекладины. Это и есть положение верхней точки упражнения."/><LineBreak/><Run Text="5) На верхней точке упражнения удерживайте положение секунду или две, сосредотачиваясь на сокращении бицепсов и задних мышц."/><LineBreak/><Run Text="6) Затем плавно опуститесь, разгибая руки в локтях, и вернитесь в исходное положение. Полностью выпрямитесь, но не позволяйте себе расслабляться в нижней точке."/></TextBlock>
+                        <Grid/>
                     </Grid>
                 </Border>
             </StackPanel>
@@ -41,7 +64,7 @@
 
                 <TextBlock Text="Бицепс"  Margin="655,22,655,8" FontSize="40" FontFamily="Century Gothic" TextAlignment="Center" />
                 <Button x:Name="Addtomytrains" Content="Добавить" Margin="400,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="172" Click="Addtomytrains_Click"/>
-                <Button x:Name="ButLk" Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
+                <Button x:Name="ButLk"  Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
                     <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
                 </Button>
                 <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >

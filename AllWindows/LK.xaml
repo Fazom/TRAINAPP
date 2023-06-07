@@ -22,7 +22,7 @@
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,99,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="261" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
                     </Grid>
                 </Border>
-               
+
 
             </StackPanel>
 
@@ -35,9 +35,8 @@
             </Border.Effect>
             <Grid>
                 <TextBlock Text="Ваши тренировки "  FontSize="40" Width="800" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic" TextAlignment="Center" />
-                <Button x:Name="ButLk" Margin="1355,0,75,0" Height="70" Width="70" VerticalAlignment="Center" >
-                    <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
-                </Button>
+                <Image x:Name="avatar" VerticalAlignment="Center" Width="65" Height="64" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Left" Margin="1400,0,0,0" />
+                <Button x:Name="Browse" Content="Измените аватарку" Margin="1175,0,180,0" Height="28" VerticalAlignment="Center" Click="Browse_Click" />
                 <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
                     <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
                 </Button>

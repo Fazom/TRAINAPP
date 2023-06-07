@@ -8,9 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AllWindows\avstralian1.jpeg" />
     <None Remove="AllWindows\free-icon-home-1946488.png" />
     <None Remove="AllWindows\hand1.jpg" />
     <None Remove="AllWindows\hand2.jpg" />
+    <None Remove="AllWindows\molotki.jpeg" />
     <None Remove="AllWindows\plus.png" />
     <None Remove="AllWindows\triceps.jpg" />
     <None Remove="AllWindows\user.png" />
@@ -29,9 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="AllWindows\avstralian1.jpeg" />
     <Resource Include="AllWindows\free-icon-home-1946488.png" />
     <Resource Include="AllWindows\hand1.jpg" />
     <Resource Include="AllWindows\hand2.jpg" />
+    <Resource Include="AllWindows\molotki.jpeg" />
     <Resource Include="AllWindows\plus.png" />
     <Resource Include="AllWindows\triceps.jpg" />
     <Resource Include="AllWindows\user.png" />

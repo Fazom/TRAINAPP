@@ -78,7 +78,7 @@ namespace TrainApp.AllWindows
 
         private void GoHome(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AllWindows.Page1());
+            NavigationService.Navigate(new AllWindows.mainpage());
         }
 
         public void startbutton()

@@ -18,7 +18,7 @@
                             <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                         </Border.Effect>
                         <Grid>
-                            <TextBlock Text="Бицепс" HorizontalAlignment="Right" Margin ="0,27,659,306" FontSize="40" Width="330" FontFamily="Century Gothic"/>
+                            <TextBlock HorizontalAlignment="Right" Margin ="0,27,346,306" FontSize="40" Width="643" FontFamily="Century Gothic" Text="Бицепс"/>
                             <Button x:Name="But_1"  Content="Просмотр" Margin="1075,328,85,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
                             <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/Image/biceps.jpg" Stretch="UniformToFill" />
                             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,99,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="261" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
@@ -54,9 +54,16 @@
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="30"  Color="Black" ShadowDepth="0.3"/>
                 </Border.Effect>
-                <Button x:Name="ButLk" Margin="1355,0,75,0" Height="70" Width="70" VerticalAlignment="Center" Click="ButLk_Click" >
-                    <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
-                </Button>
+                <Grid>
+                    <Button x:Name="ButLk" Margin="1355,0,75,0" Height="70" Width="70" VerticalAlignment="Center" Click="ButLk_Click" >
+                        <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                    </Button>
+                    <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
+                        <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                    </Button>
+                    <TextBlock Text="Тренировка рук на улице" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Width="558" FontFamily="Century Gothic" Margin="0,0,0,0" TextAlignment="Center"/>
+                </Grid>
+                
             </Border>
 
         </Grid>
