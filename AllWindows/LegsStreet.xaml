@@ -1,0 +1,47 @@
+﻿<Page x:Class="TrainApp.AllWindows.LegsStreet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrainApp.AllWindows"
+     mc:Ignorable="d" 
+      MinHeight="2000"
+      Height="auto" d:DesignWidth="1540"  
+    Title="LegsStreet">
+    <DockPanel>
+        <Grid Margin="0"  Background="#353647">
+            <ScrollViewer Margin  ="0,0,0,0" VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="0,150,0,0">
+
+                    <Border Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
+                        </Border.Effect>
+                        <Grid>
+                            <TextBlock HorizontalAlignment="Right" Margin ="0,27,346,306" FontSize="40" Width="643" FontFamily="Century Gothic"><Run Language="ru-ru" Text="Общая тренировка ног"/></TextBlock>
+                            <Button x:Name="But_1"  Content="Просмотр" Margin="1075,328,85,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
+                            <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/AllWindows/legs1.png" Stretch="UniformToFill" />
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,99,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="261" TextAlignment="Justify" Text="Эта тренировка разработана для развития силы, выносливости и гибкости нижних конечностей. Она включает разнообразные упражнения, которые можно выполнять на спортивной площадке или с использованием доступных оборудования, таких как брусья, перекладина и гимнастические кольца. Воркаут-тренировка ног нацелена на укрепление мышц ног, улучшение координации и функциональности, а также повышение общей физической подготовки."/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+            <Border Margin="0,0,0,0" Background="White" Padding="0"  Height="100" Width="1540" VerticalAlignment="top" >
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="30"  Color="Black" ShadowDepth="0.3"/>
+                </Border.Effect>
+                <Grid>
+                    <Button x:Name="ButLk" Padding="0"   Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
+                        <Image x:Name="avatar" Height="51" Width="59" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="/AllWindows/user.png" Stretch="UniformToFill"  />
+                    </Button>
+                    <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
+                        <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                    </Button>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Width="558" FontFamily="Century Gothic" Margin="0,0,0,0" TextAlignment="Center"><Run Text="Тренировка "/><Run Language="ru-ru" Text="ног"/><Run Text=" на улице"/></TextBlock>
+                </Grid>
+
+            </Border>
+
+        </Grid>
+    </DockPanel>
+</Page>

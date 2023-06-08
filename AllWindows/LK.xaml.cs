@@ -24,9 +24,14 @@ namespace TrainApp.AllWindows
         {
             InitializeComponent();
             bool train1bool = Properties.Settings.Default.Train1bool;
+            bool train11legs = Properties.Settings.Default.Train11legs;
             if(train1bool)
             {
                 Train1.Visibility= Visibility.Visible;
+            }
+            if(train11legs)
+            {
+                Train2.Visibility = Visibility.Visible;
             }
 
             string filePath = Properties.Settings.Default.avatar;
@@ -43,7 +48,7 @@ namespace TrainApp.AllWindows
 
         private void GoHome(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AllWindows.Page1());
+            NavigationService.Navigate(new AllWindows.mainpage());
         }
 
         private void But_1_Click(object sender, RoutedEventArgs e)
@@ -64,6 +69,11 @@ namespace TrainApp.AllWindows
                 Properties.Settings.Default.avatar = filePath;
                 Properties.Settings.Default.Save();
             }
+        }
+
+        private void But_2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllWindows.baselegs());
         }
     }
 }

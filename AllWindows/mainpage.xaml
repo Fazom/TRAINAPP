@@ -5,20 +5,20 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TrainApp.AllWindows"
        mc:Ignorable="d" 
-      d:DesignHeight="1720" d:DesignWidth="1540" 
-      Title="mainpage">
+       d:DesignWidth="1540" 
+      Title="mainpage" Height="auto">
 
     <DockPanel>
         <Grid Margin="0"  Background="#353647">
             <ScrollViewer Margin  ="0,0,0,0" VerticalScrollBarVisibility="Auto">
                 <StackPanel Margin="0,150,0,0">
 
-                    <Border Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
+                    <Border Margin="80,50,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
                         <Border.Effect>
                             <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                         </Border.Effect>
                         <Grid>
-                            <TextBlock Text="Руки: улица" HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"/>
+                            <TextBlock HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"><Run Text="Руки: "/><Run Language="ru-ru" Text="У"/><Run Text="лица"/></TextBlock>
                             <Button x:Name="But_1"  Content="Просмотр" Margin="1090,328,55,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
                             <Image Margin="55,99,1078,54" Source="/Image/biceps.jpg" Stretch="UniformToFill" />
                             <Image Margin="330,99,803,54" Source="/AllWindows/hand1.jpg" Stretch="UniformToFill" />
@@ -26,28 +26,30 @@
                             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Width="415" FontFamily="Century Gothic" VerticalAlignment="Top" Height="224" TextAlignment="Justify" Margin="910,99,0,0"><Run Text="В данном блоке собраны тренировки на все группы мышц рук"/><Run Text=". Программы нацеленны на тренировки"/><Run Language="ru-ru" Text=" "/><Run Text="на спорт площадках на улице"/></TextBlock>
                         </Grid>
                     </Border>
-                    <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
+                    <Border Margin="80,50,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
                         <Border.Effect>
                             <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                         </Border.Effect>
                         <Grid>
-                            <TextBlock HorizontalAlignment="Right" Margin ="0,27,659,306" FontSize="40" Width="330" FontFamily="Century Gothic"><Run Language="ru-ru" Text="Трицепс"/></TextBlock>
-                            <Button x:Name="But_2" Content="Просмотр" Margin="1075,328,85,40" Click="But_2_Click" />
-                            <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/AllWindows/triceps.jpg" Stretch="UniformToFill" />
-                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,94,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="266" TextAlignment="Justify"><Run Text="Если вы хотите иметь огромные руки, то первым делом вам нужна мощная трехглавая мышца плеча (трицепс), которая отвечает за разгибание предплечья в локтевом суставе. В "/><Run Language="ru-ru" Text="этом блоке"/><Run Text=" "/><Run Language="ru-ru" Text="будет показано"/><Run Text=" несколько убойных упражнений для её развития"/><Run Language="ru-ru" Text="."/></TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"><Run Text="Руки: "/><Run Language="ru-ru" Text="Зал"/></TextBlock>
+                            <Button x:Name="But_2"  Content="Просмотр" Margin="1090,328,55,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
+                            <Image Margin="55,99,1078,54" Source="/AllWindows/hanggym3.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <Image Margin="330,99,803,54" Source="/AllWindows/hanggym1.jpeg" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <Image Margin="605,99,532,54" Source="/AllWindows/hanggym2.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Width="415" FontFamily="Century Gothic" VerticalAlignment="Top" Height="224" TextAlignment="Justify" Margin="910,99,0,0"><Run Text="В данном блоке собраны тренировки на все группы мышц рук"/><Run Text=". Программы нацеленны на тренировки"/><Run Text=" "/><Run Language="ru-ru" Text="в зале"/></TextBlock>
                         </Grid>
-
-
                     </Border>
-                    <Border Margin="80,30,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
+                    <Border Margin="80,50,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
                         <Border.Effect>
                             <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                         </Border.Effect>
                         <Grid>
-                            <TextBlock Text="Бицепс" HorizontalAlignment="Right" Margin ="0,47,659,286" FontSize="40" Width="330" FontFamily="Century Gothic"/>
-                            <Button x:Name="But_3" Content="Просмотр" Margin="1075,328,85,40" />
-                            <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/Image/biceps.jpg" Stretch="UniformToFill" />
-                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,119,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="241" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
+                            <TextBlock HorizontalAlignment="Center" Margin ="0,27,0,306" FontSize="40" Width="330" FontFamily="Century Gothic" TextAlignment="Center"><Run Language="ru-ru" Text="Ноги"/><Run Text=": "/><Run Language="ru-ru" Text="Улица"/></TextBlock>
+                            <Button x:Name="But_3"  Content="Просмотр" Margin="1090,328,55,0" Height="32" VerticalAlignment="Top" Click="But_3_Click"   />
+                            <Image Margin="55,99,1078,54" Source="/AllWindows/legs1.png" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <Image Margin="330,99,803,54" Source="/AllWindows/legs2.jpeg" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <Image Margin="605,99,532,54" Source="/AllWindows/legs3.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="UniformToFill" />
+                            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Width="415" FontFamily="Century Gothic" VerticalAlignment="Top" Height="224" TextAlignment="Justify" Margin="910,99,0,0"><Run Language="ru-ru" Text="Здесь собраны тренировки для всех групп мышц ног, которые вы сможете повторить на спортплощадке."/></TextBlock>
                         </Grid>
                     </Border>
                 </StackPanel>
@@ -57,9 +59,9 @@
                     <DropShadowEffect BlurRadius="30"  Color="Black" ShadowDepth="0.3"/>
                 </Border.Effect>
                 <Grid>
-                    <TextBlock Text="Главная страница" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="40" Width="495" FontFamily="Century Gothic" Margin="555,0,0,0" TextAlignment="Center"/>
-                    <Button x:Name="ButLk" Margin="1355,0,75,0" Height="70" Width="70" VerticalAlignment="Center" Click="ButLk_Click" >
-                        <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                    <TextBlock Text="Главная страница" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" Width="496" FontFamily="Century Gothic" TextAlignment="Center"/>
+                    <Button x:Name="ButLk" Padding="0"   Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
+                        <Image x:Name="avatar" Height="51" Width="59" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="/AllWindows/user.png" Stretch="UniformToFill"  />
                     </Button>
                 </Grid>
 

@@ -46,5 +46,17 @@ namespace TrainApp.Properties {
                 this["avatar"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Train11legs {
+            get {
+                return ((bool)(this["Train11legs"]));
+            }
+            set {
+                this["Train11legs"] = value;
+            }
+        }
     }
 }

@@ -5,24 +5,36 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TrainApp.AllWindows"
      mc:Ignorable="d" 
-      d:DesignHeight="3000" d:DesignWidth="1540" 
+       d:DesignWidth="1540" 
+      Height="auto"
       Title="LK">
 
     <Grid Margin="0" Background="#353647" >
-        <ScrollViewer Margin  ="0,0,0,0" VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="0,100,0,0">
+        <ScrollViewer Margin="0,100,0,0" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0,0,0,0">
                 <Border x:Name="Train1" Visibility="Collapsed" Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
                     </Border.Effect>
                     <Grid>
-                        <TextBlock Text="Бицепс" HorizontalAlignment="Right" Margin ="0,27,659,306" FontSize="40" Width="330" FontFamily="Century Gothic"/>
+                        <TextBlock Text="Бицепс на улице" HorizontalAlignment="Right" Margin ="0,27,623,306" FontSize="40" Width="366" FontFamily="Century Gothic"/>
                         <Button x:Name="But_1"  Content="Просмотр" Margin="1075,328,85,0" Height="32" VerticalAlignment="Top" Click="But_1_Click"  />
                         <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/Image/biceps.jpg" Stretch="UniformToFill" />
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,99,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="261" TextAlignment="Justify"><Run Text="Программа строится на разных упражнениях, которые условно можно разделить на 3 типа: "/><LineBreak/><Run/><Run Text="Основные базовые. За счёт этих упражнений строится основная мышечная масса рук, т.к. они являются тяжёлыми и многосуставными. "/><LineBreak/><Run Text="Проработка отстающих мышц. При обычных подтягиваниях или отжиманиях, не все мышцы рук работают одинаково. "/><LineBreak/><Run Text="Пампинг. Он понадобится нам для того, чтобы «добить» мышцы до отказа, насытить их максимально кровью и питательными веществами вместе с кислородом."/></TextBlock>
                     </Grid>
                 </Border>
 
+                <Border x:Name="Train2" Visibility="Collapsed" Margin="80,100,80,10" CornerRadius="50" Background="White" Padding="0" Height="400" >
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="20"  Color="LightGray" ShadowDepth="0.1"/>
+                    </Border.Effect>
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Right" Margin ="0,27,346,306" FontSize="40" Width="643" FontFamily="Century Gothic"><Run Language="ru-ru" Text="Общая тренировка ног"/></TextBlock>
+                        <Button x:Name="But_2"  Content="Просмотр" Margin="1075,328,85,0" Height="32" VerticalAlignment="Top" Click="But_2_Click"  />
+                        <Image Margin="60,40,1000,40" Height="320" Width="320" Source="/AllWindows/legs1.png" Stretch="UniformToFill" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="391,99,0,0" FontSize="20" Width="645" FontFamily="Century Gothic" VerticalAlignment="Top" Height="261" TextAlignment="Justify" Text="Эта тренировка разработана для развития силы, выносливости и гибкости нижних конечностей. Она включает разнообразные упражнения, которые можно выполнять на спортивной площадке или с использованием доступных оборудования, таких как брусья, перекладина и гимнастические кольца. Воркаут-тренировка ног нацелена на укрепление мышц ног, улучшение координации и функциональности, а также повышение общей физической подготовки."/>
+                    </Grid>
+                </Border>
 
             </StackPanel>
 
@@ -37,7 +49,7 @@
                 <TextBlock Text="Ваши тренировки "  FontSize="40" Width="800" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic" TextAlignment="Center" />
                 <Image x:Name="avatar" VerticalAlignment="Center" Width="65" Height="64" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Left" Margin="1400,0,0,0" />
                 <Button x:Name="Browse" Content="Измените аватарку" Margin="1175,0,180,0" Height="28" VerticalAlignment="Center" Click="Browse_Click" />
-                <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
+                <Button x:Name="Home" Margin="95,0,1375,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="GoHome" >
                     <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
                 </Button>
             </Grid>

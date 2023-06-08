@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
@@ -29,6 +30,12 @@ namespace TrainApp.AllWindows
             video1.Pause();
             train1bool = Properties.Settings.Default.Train1bool;
             startbutton();
+            string filePath = Properties.Settings.Default.avatar;
+            if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
+            {
+                BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+                avatar.Source = bitmap;
+            }
 
         }
 

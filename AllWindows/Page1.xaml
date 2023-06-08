@@ -6,7 +6,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TrainApp.AllWindows"
       mc:Ignorable="d" 
-      d:DesignHeight="1720" d:DesignWidth="1540"  
+      Height="auto" d:DesignWidth="1540"  
     Title="Page1">
     <DockPanel>
         <Grid Margin="0"  Background="#353647">
@@ -55,8 +55,8 @@
                     <DropShadowEffect BlurRadius="30"  Color="Black" ShadowDepth="0.3"/>
                 </Border.Effect>
                 <Grid>
-                    <Button x:Name="ButLk" Margin="1355,0,75,0" Height="70" Width="70" VerticalAlignment="Center" Click="ButLk_Click" >
-                        <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                    <Button x:Name="ButLk" Padding="0"   Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
+                        <Image x:Name="avatar" Height="51" Width="59" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="/AllWindows/user.png" Stretch="UniformToFill"  />
                     </Button>
                     <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
                         <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />

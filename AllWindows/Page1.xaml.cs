@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,12 @@ namespace TrainApp.AllWindows
         public Page1()
         {
             InitializeComponent();
+            string filePath = Properties.Settings.Default.avatar;
+            if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
+            {
+                BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+                avatar.Source = bitmap;
+            }
         }
 
         private void But_1_Click(object sender, RoutedEventArgs e)

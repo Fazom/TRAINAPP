@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace TrainApp.AllWindows
         public mainpage()
         {
             InitializeComponent();
+            string filePath = Properties.Settings.Default.avatar;
+            if (!string.IsNullOrEmpty(filePath) && File.Exists(filePath))
+            {
+                BitmapImage bitmap = new BitmapImage(new Uri(filePath));
+                avatar.Source = bitmap;
+            }
         }
         private void But_1_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +44,11 @@ namespace TrainApp.AllWindows
         private void ButLk_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new AllWindows.LK());
+        }
+
+        private void But_3_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllWindows.LegsStreet());
         }
     }
 }

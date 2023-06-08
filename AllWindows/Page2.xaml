@@ -21,7 +21,7 @@
                         <Image Margin="847,185,40,482" Source="/AllWindows/uzkiy.png" Stretch="UniformToFill" />
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Margin ="40,185,0,0" FontSize="20" Width="749" FontFamily="Century Gothic" VerticalAlignment="Top" Height="335" TextAlignment="Justify"><Run Text="От постановки рук зависит какая именно группа мышечных волокон будет вовлечена в работу. Чтобы работал бицепс, хват должен быть обратным либо прямым (лучше комбинировать или чередовать), с расстоянием между руками меньше уровня плеч, примерно 15-20 см друг от друга. Можно комбинировать с параллельным хватом, когда ладони будут располагаться на одном уровне с плечами, но не на перекладине, а на боковых рукоятках, друг напротив друга. "/><LineBreak/><Run/><LineBreak/><Run Text="Нагрузка на бицепс происходит не во время всего подтягивания, а только до достижения 90 градусов в локтевом сгибе. После этого в процесс включается широчайшая мышца, ее участие позволяет дотянуться подбородком до перекладины. "/><LineBreak/></TextBlock>
                         <Grid>
-                            <MediaElement x:Name="video1"  Width="700" Height="400" Margin="67,532,618,52" LoadedBehavior="Manual" Source="E:\VUZ\2Семак\Прикладное программирование\TrainApp\pushups.mp4" />
+                            <MediaElement x:Name="video1"  Width="700" Height="400" Margin="67,532,618,52" LoadedBehavior="Manual" Source="video/push.mp4" />
                             <Button x:Name="Playbut" Content="Play" Click="Playbutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,915,0,0" />
                             <Button x:Name="Pausebut" Content="Pause" Click="Pausebutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="665,915,0,0" />
                             <Button x:Name="Replaybut" Content="Replay" Click="RePlaybutton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,915,0,0" />
@@ -62,10 +62,10 @@
 
             <Grid>
 
-                <TextBlock Text="Бицепс"  Margin="655,22,655,8" FontSize="40" FontFamily="Century Gothic" TextAlignment="Center" />
-                <Button x:Name="Addtomytrains" Content="Добавить" Margin="400,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="172" Click="Addtomytrains_Click"/>
-                <Button x:Name="ButLk"  Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
-                    <Image Height="40" Width="40" Source="/AllWindows/user.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
+                <TextBlock  Margin="523,22,523,8" FontSize="40" FontFamily="Century Gothic" TextAlignment="Center" ><Run Text="Бицепс"/><Run Language="ru-ru" Text=" на улице"/></TextBlock>
+                <Button x:Name="Addtomytrains" Content="Добавить" Margin="1103,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="172" Click="Addtomytrains_Click"/>
+                <Button x:Name="ButLk" Padding="0"   Margin="1375,0,95,15" Height="70" Width="70" VerticalAlignment="Bottom" Click="ButLk_Click" >
+                    <Image x:Name="avatar" Height="51" Width="59" HorizontalAlignment="Center" VerticalAlignment="Center"  Source="/AllWindows/user.png" Stretch="UniformToFill"  />
                 </Button>
                 <Button x:Name="Home" Margin="95,0,1375,0" Height="70" Width="70" VerticalAlignment="Center" Click="GoHome" >
                     <Image Height="40" Width="40" Source="/AllWindows/free-icon-home-1946488.png" Stretch="UniformToFill" HorizontalAlignment="Center" />
